@@ -304,6 +304,18 @@ nav ul li a:hover::after {
   margin-top: 30px;
 }
 
+.contact-left a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.contact-left a:hover{
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+
 .contact-left p i {
   color: #ff004f;
   margin-right: 15px;
