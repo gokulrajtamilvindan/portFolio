@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ace9d948c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="side-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+            <i class="fa-solid fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>Hi, I'm <span>Gokulraj</span><br />Tamilvindan From India</h1>
+        </div>
+      </div>
+    </div>
+    <!-- ----------about---------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+              incidunt molestiae modi odit, vitae officiis consectetur quidem
+              perferendis placeat praesentium rem illum voluptas quod,
+              dignissimos accusamus possimus minus quis sequi.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Java</span><br />Use Java for Backend</li>
+                <li><span>Web Development</span><br />Web App Development</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2024 - Current</span><br />Java Full Stack Development
+                  at AccioJob
+                </li>
+                <li>
+                  <span>2022 - 2022</span><br />Associate Customer Support at
+                  Tech Mahindra
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2018 - 2022</span><br />B.E Mechatronics Engineering in
+                  Mahendra College of Engineering, Salem
+                </li>
+                <li>
+                  <span>2017 - 2018</span><br />HSC in Little Flower Higher
+                  Secondary School, Kumbakonam
+                </li>
+                <li>
+                  <span>2015 - 2016</span><br />SSLC in Vidyaa Vikas
+                  Matriculation and Higher Secondary School, Gandarvakottai
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------services---------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              temporibus cumque amet laudantium, labore natus deleniti
+              exercitationem facere optio quos fuga rerum maiores! Maiores
+              aperiam facilis minus dolorem illo natus.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              temporibus cumque amet laudantium, labore natus deleniti
+              exercitationem facere optio quos fuga rerum maiores! Maiores
+              aperiam facilis minus dolorem illo natus.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              temporibus cumque amet laudantium, labore natus deleniti
+              exercitationem facere optio quos fuga rerum maiores! Maiores
+              aperiam facilis minus dolorem illo natus.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------------portfolio---------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connects you to the talented people around the world.
+                Download it from playstore.
+              </p>
+              <a href="#">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The app connects you to the Music World. Download it from
+                playstore.
+              </p>
+              <a href="#">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                The app connects you to the Online Shopping Platform. Download
+                it from playstore.
+              </p>
+              <a href="#">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- -----------contact---------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i
+              >gokulraj.tamilvindan@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>+91-9629459788</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/learns_from_mistakes/">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/gokulraj-tamilvindan/">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://x.com/rockgokul67">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </div>
+            <a href="images/Gokulraj_Resume_V2.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &#169; Gokulraj Tamilvindan. Made with
+          <i class="fa-solid fa-heart"></i> by Easy Tutorials
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
